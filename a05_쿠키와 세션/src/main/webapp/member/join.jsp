@@ -44,7 +44,7 @@
 			history.back();
 		</script>
 <% 		
-			rs.close();
+			
 			pstmt.close();
 		}
 		

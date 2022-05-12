@@ -19,7 +19,7 @@
 	if(cookies != null){
 		for(Cookie c : cookies){
 			if(c.getName().equals("userId")){
-				out.println(c.getValue());
+				out.println("userId에 저장된 값: " + c.getValue());
 				break;
 			}
 		}
