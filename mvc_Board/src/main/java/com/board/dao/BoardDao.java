@@ -250,7 +250,7 @@ public class BoardDao {
 					conn.close();
 				}
 			} catch (SQLException e) {
-				throw new RuntimeException(e);
+				e.printStackTrace();
 			}
 		}
 	}
