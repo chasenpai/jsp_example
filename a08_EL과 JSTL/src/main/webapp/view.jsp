@@ -45,28 +45,29 @@
 	dto.setTitle(dto.getTitle().replace(" ", "&nbsp;"));
 	dto.setContent(dto.getContent().replace(" ", "&nbsp;").replace("\n", "<br>"));
 	
+	request.setAttribute("board", dto);
 %>
 <div>
 	<table>
 		<tr>
 			<th>제목</th>
-			<td><%=dto.getTitle()%></td>
+			<td>${board.title }</td>
 		</tr>
 		<tr>
 			<th>작성자</th>
-			<td><%=dto.getWriter() %></td>
+			<td>${board.writer }</td>
 		</tr>
 		<tr>
 			<th>작성일시</th>
-			<td><%=dto.getRegtime() %></td>
+			<td>${board.regtime }</td>
 		</tr>
 		<tr>
 			<th>조회수</th>
-			<td><%=dto.getHits() %></td>
+			<td>${board.hits }</td>
 		</tr>
 		<tr>
 			<th>내용</th>
-			<td><%=dto.getContent() %></td>
+			<td>${board.content }</td>
 		</tr>
 	</table>
 	<br>
