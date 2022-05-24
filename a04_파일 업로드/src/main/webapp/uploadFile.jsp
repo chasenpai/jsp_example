@@ -30,6 +30,7 @@
 		);
 	
 	String userName = multi.getParameter("userName");
+	System.out.println(userName);
 
 	File file = multi.getFile("upload");
 	
